@@ -12,6 +12,7 @@
 
 body {
     margin: 0;
+    padding: 0 8px;
     background: linear-gradient(to bottom, #daebb6, #2d351e);
   }
 
@@ -24,6 +25,11 @@ nav {
   color:#143909;
 }
 
+/*added contact page and removed underline */
+.contact {
+  text-decoration: none;
+}
+
 /***********************  Footer Section   **************************/
 footer {
   padding: 20px;
@@ -31,6 +37,11 @@ footer {
   justify-content:center;
   background-color:#819067;
   color:#3f4a2b;
+}
+
+.icon {
+  padding-left: 5px;
+  text-decoration: none;
 }
 
 /*********** Splash Page ************************/
@@ -97,7 +108,7 @@ section ul {
 }
 
 section a {
-  color:#aaba8c;
+  color:#284320;
   text-decoration: none;
   font-weight: bold;
 }
