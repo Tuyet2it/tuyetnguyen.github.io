@@ -1,0 +1,202 @@
+/***** fonts *****/
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.unna-regular {
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0 8px;
+    background: linear-gradient(to bottom, #daebb6, #2d351e);
+  }
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  justify-content:space-between;
+  align-items:end;
+	background-color:#bbc9a4;
+  color:#143909;
+}
+
+.contact {
+  text-decoration: none;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  padding: 20px;
+	display:flex;
+  justify-content:center;
+  background-color:#819067;
+  color:#3f4a2b;
+}
+
+.icon {
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: #C5D89D;
+  padding: 40px;
+  text-align: center;
+  border-bottom: 5px solid #383f2a;
+}
+
+header h1 {
+  font-family: 'Lobster', sans-serif;
+  font-size:50px;
+  color:#50642e;
+  margin-bottom: 10px;
+}
+
+header img {
+  width: 200px;
+  border: 4px solid #143909;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px;
+}
+
+.address {
+  font-family:'Unna', serif;
+  font-size: 20px;
+  color: #2d351e;
+}
+
+.tagline {
+  font-style:italic;
+  color:#2d351e;
+  font-size: 20px;
+}
+
+/************* Sections ********************/
+hr {
+  border: 0;
+  height: 2%;
+  background:#ccc;
+  margin: 0px;
+}
+
+section h3 {
+  font-family: "Bitcount Prop Single", system-ui;
+  font-size: large;
+  color: #253521;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 5px 20px;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style-type: circle;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+section a {
+  color:#284320;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section a:hover {
+  color: #022692;
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.card img {
+  width: 90%;
+  height: 40%;
+  object-fit: cover;
+  border: 1px solid #778873;
+  background-color:#778873;
+  border-radius: 3%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-position: inside;
+  text-align: center;
+  box-shadow: 0 4px 8px 0;
+  color:#0c2307;
+  transition: 0.3s;
+  border-radius:3%;
+  background-color: #778873;
+  min-height: 450px;
+  padding: 10px;
+}
+
+.card3 {
+  width: 400px;
+  height: 500px;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #4c0d0a;
+  border-radius: 4px;
+  font-family: 'Unna', serif;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 45px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #4c0d0a;
+  border-radius: 4px;
+  font-family: 'Unna', serif;
+  box-sizing: border-box;
+  resize: vertical;
+}
